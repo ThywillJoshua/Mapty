@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "leaflet": "^1.7.1"
+  },
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "An exercise tracking app",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThywillJoshua/Mapty.git"
+  },
+  "author": "Thywill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThywillJoshua/Mapty/issues"
+  },
+  "homepage": "https://github.com/ThywillJoshua/Mapty#readme"
+}
