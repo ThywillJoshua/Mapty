@@ -13,6 +13,15 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Font-Awesome -->
+
     <!-- UUIDV4 -->
     <script
       defer
@@ -38,7 +47,7 @@
     <script defer src="script.js"></script>
     <title>mapty // Map your workouts</title>
   </head>
-  <body>
+  <body class="body__section">
     <div class="sidebar">
       <img src="logo.png" alt="Logo" class="logo" />
 
@@ -78,60 +87,18 @@
           </div>
           <button class="form__btn">OK</button>
         </form>
-
-        <!-- <li class="workout workout--running" data-id="1234567890">
-          <h2 class="workout__title">Running on April 14</h2>
-          <div class="workout__details">
-            <span class="workout__icon">🏃‍♂️</span>
-            <span class="workout__value">5.2</span>
-            <span class="workout__unit">km</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">⏱</span>
-            <span class="workout__value">24</span>
-            <span class="workout__unit">min</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">⚡️</span>
-            <span class="workout__value">4.6</span>
-            <span class="workout__unit">min/km</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">🦶🏼</span>
-            <span class="workout__value">178</span>
-            <span class="workout__unit">spm</span>
-          </div>
-        </li>
-
-        <li class="workout workout--cycling" data-id="1234567891">
-          <h2 class="workout__title">Cycling on April 5</h2>
-          <div class="workout__details">
-            <span class="workout__icon">🚴‍♀️</span>
-            <span class="workout__value">27</span>
-            <span class="workout__unit">km</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">⏱</span>
-            <span class="workout__value">95</span>
-            <span class="workout__unit">min</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">⚡️</span>
-            <span class="workout__value">16</span>
-            <span class="workout__unit">km/h</span>
-          </div>
-          <div class="workout__details">
-            <span class="workout__icon">⛰</span>
-            <span class="workout__value">223</span>
-            <span class="workout__unit">m</span>
-          </div>
-        </li> -->
       </ul>
 
-      <p class="copyright">
-        &copy; Copyright
-        <a href="https://github.com/ThywillJoshua/Mapty.git">Source Code</a>
-      </p>
+      <div class="copyright">
+        <a href="https://github.com/ThywillJoshua/Mapty.git" target="_blank"
+          ><i class="fab fa-github-square fa-2x icons"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/thywill-joshua-72573b182/"
+          target="_blank"
+          ><i class="fab fa-linkedin fa-2x icons"></i
+        ></a>
+      </div>
     </div>
 
     <div id="map"></div>
