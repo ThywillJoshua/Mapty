@@ -37,7 +37,7 @@ body {
 /* GENERAL */
 a:link,
 a:visited {
-  color: var(--color-brand--1);
+  color: var(--color-light--2);
 }
 
 /* SIDEBAR */
@@ -49,10 +49,40 @@ a:visited {
   flex-direction: column;
 }
 
+.btn {
+  background-color: var(--color-dark--2);
+  border-radius: 0.5rem;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--color-light--2);
+  font-family: Arial;
+  font-size: 1.3rem;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  transition: all ease-in-out 500ms;
+}
+.btn:hover {
+  background-color: var(--color-light--2);
+  color: var(--color-dark--2);
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.hide {
+  display: none;
+}
+
 .logo {
   height: 5.2rem;
   align-self: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  align-self: center;
+  margin-bottom: 3rem;
 }
 
 .workouts {
@@ -93,6 +123,10 @@ a:visited {
 .workout__details {
   display: flex;
   align-items: baseline;
+}
+
+.trash__icon {
+  margin-left: 7rem;
 }
 
 .workout__icon {
@@ -164,7 +198,7 @@ a:visited {
 
 .form__input:focus {
   outline: none;
-  background-color: #fff;
+  background-color: var(--color-light--2);
 }
 
 .form__btn {
@@ -220,6 +254,11 @@ a:visited {
 }
 
 .icons {
-  color: #ececec;
+  color: var(--color-light--1);
+  margin: 0 10px;
+}
+
+.icons:hover {
+  color: var(--color-light--2);
   margin: 0 10px;
 }
