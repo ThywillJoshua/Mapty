@@ -136,7 +136,7 @@ class App {
     L.marker(coords)
       .addTo(this.#map)
       .bindPopup(L.popup(popUpOptions))
-      .setPopupContent(`You're here!`)
+      .setPopupContent(`📍 You're here!`)
       .openPopup();
   }
 
