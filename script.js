@@ -68,6 +68,7 @@ const resetBtn = document.querySelector('.reset__btn');
 const submitBtn = document.querySelector('.submit__btn');
 const menuBtn = document.querySelector('.burger__icon');
 const sidebar = document.querySelector('.sidebar');
+const instruction = document.querySelector('.start__instruction');
 
 class App {
   #map;
@@ -150,6 +151,7 @@ class App {
 
     form.classList.remove('hidden');
     submitBtn.classList.remove('hide');
+    instruction.classList.add('hide');
     inputDistance.focus();
 
     this.#mapEvent = mapE;

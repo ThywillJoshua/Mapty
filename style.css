@@ -87,7 +87,7 @@ a:visited {
 
 .buttons {
   align-self: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .workouts {
@@ -237,8 +237,8 @@ a:visited {
 
 .burger__icon {
   position: absolute;
-  top: 4.8rem;
-  right: 5rem;
+  top: 2.8rem;
+  right: 3rem;
   z-index: 500;
   cursor: pointer;
 
@@ -271,12 +271,11 @@ a:visited {
 
 .icons {
   color: var(--color-light--1);
-  margin: 0 10px;
+  margin: 2rem 0.6rem;
 }
 
 .icons:hover {
   color: var(--color-light--2);
-  margin: 0 10px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -291,10 +290,12 @@ a:visited {
   }
 
   .sidebar {
-    padding: 3rem 1.3rem;
+    flex-basis: 39rem;
+    padding: 1rem 1.3rem;
+    padding-bottom: 0;
     display: none;
 
-    height: 30%;
+    height: 10rem;
   }
 
   .show__sidebar {
@@ -303,7 +304,6 @@ a:visited {
 
   .burger__icon {
     visibility: visible;
-    right: 2.5rem;
   }
 
   .workout {
@@ -320,5 +320,21 @@ a:visited {
 
   input[type='text'] {
     font-size: inherit;
+  }
+
+  .workouts {
+    list-style: none;
+    height: 60%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .copyright {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .icons {
+    margin: 1rem 0.6rem;
   }
 }
