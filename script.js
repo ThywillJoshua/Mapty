@@ -124,7 +124,14 @@ class App {
   }
 
   _showForm(mapE) {
-    console.log('Hello');
+    if (
+      !sidebar.classList.contains('change__icon-color') &&
+      !menuBtn.classList.contains('change__icon-color')
+    ) {
+      menuBtn.classList.add('change__icon-color');
+      sidebar.classList.add('show__sidebar');
+    }
+
     form.classList.remove('hidden');
     inputDistance.focus();
 
