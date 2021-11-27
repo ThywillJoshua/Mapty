@@ -65,6 +65,8 @@ const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
 const resetBtn = document.querySelector('.reset__btn');
+const menuBtn = document.querySelector('.burger__icon');
+const sidebar = document.querySelector('.sidebar');
 
 class App {
   #map;
@@ -87,6 +89,7 @@ class App {
     inputType.addEventListener('change', this._toggleElevationField);
     containerWorkouts.addEventListener('click', this._moveToPopUp.bind(this));
     resetBtn.addEventListener('click', this._reset);
+    menuBtn.addEventListener('click', this._showMenu.bind(this));
   }
 
   _getPosition() {
@@ -121,6 +124,7 @@ class App {
   }
 
   _showForm(mapE) {
+    console.log('Hello');
     form.classList.remove('hidden');
     inputDistance.focus();
 
@@ -305,6 +309,13 @@ class App {
     if (this.#workouts.length <= 0) return;
 
     resetBtn.classList.remove('hide');
+  }
+
+  _showMenu(e) {
+    e.stopPropagation();
+
+    sidebar.classList.toggle('show__sidebar');
+    menuBtn.classList.toggle('change__icon-color');
   }
 }
 

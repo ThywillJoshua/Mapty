@@ -32,6 +32,7 @@ body {
   padding: 2.5rem;
 
   display: flex;
+  position: relative;
 }
 
 /* GENERAL */
@@ -230,6 +231,17 @@ a:visited {
   background-color: var(--color-light--1);
 }
 
+.burger__icon {
+  position: absolute;
+  top: 6.6rem;
+  right: 5rem;
+  z-index: 500;
+  cursor: pointer;
+
+  color: var(--color-dark--1);
+  visibility: hidden;
+}
+
 /* Popup width is defined in JS using options */
 .leaflet-popup .leaflet-popup-content-wrapper {
   background-color: var(--color-dark--1);
@@ -261,4 +273,32 @@ a:visited {
 .icons:hover {
   color: var(--color-light--2);
   margin: 0 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-basis: 50rem;
+    background-color: var(--color-dark--1);
+    padding: 3rem 5rem 4rem 5rem;
+    display: none;
+    flex-direction: column;
+
+    height: 40vh;
+  }
+
+  .show__sidebar {
+    display: flex;
+  }
+
+  .burger__icon {
+    visibility: visible;
+  }
+
+  .change__icon-color {
+    color: var(--color-light--1);
+  }
 }
