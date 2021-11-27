@@ -50,6 +50,10 @@ a:visited {
   flex-direction: column;
 }
 
+.buttons {
+  text-align: center;
+}
+
 .btn {
   background-color: var(--color-dark--2);
   border-radius: 0.5rem;
@@ -279,6 +283,7 @@ a:visited {
   body {
     max-height: 100vh;
     max-width: 100vw;
+    margin: auto;
     flex-direction: column;
     padding: 0;
     overflow: hidden;
@@ -288,7 +293,7 @@ a:visited {
     padding: 3rem 2.3rem;
     display: none;
 
-    height: 40vh;
+    height: 30%;
   }
 
   .show__sidebar {

@@ -65,6 +65,7 @@ const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
 const resetBtn = document.querySelector('.reset__btn');
+const submitBtn = document.querySelector('.submit__btn');
 const menuBtn = document.querySelector('.burger__icon');
 const sidebar = document.querySelector('.sidebar');
 
@@ -90,6 +91,7 @@ class App {
     containerWorkouts.addEventListener('click', this._moveToPopUp.bind(this));
     resetBtn.addEventListener('click', this._reset);
     menuBtn.addEventListener('click', this._showMenu.bind(this));
+    submitBtn.addEventListener('click', this._newWorkout.bind(this));
   }
 
   _getPosition() {
@@ -132,7 +134,8 @@ class App {
       sidebar.classList.add('show__sidebar');
     }
 
-    form.classList.remove('hidden');
+    form.classList.remove('hide');
+    submitBtn.classList.remove('hidden');
     inputDistance.focus();
 
     this.#mapEvent = mapE;
