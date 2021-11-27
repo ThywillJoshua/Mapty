@@ -161,6 +161,8 @@ class App {
   _newWorkout(e) {
     e.preventDefault();
 
+    this._zoomOutMobile();
+
     const validInputs = (...inputs) =>
       inputs.every(inp => Number.isFinite(inp));
 
@@ -298,6 +300,7 @@ class App {
     localStorage.removeItem('workouts');
     location.reload();
   }
+
   _setLocalStorage() {
     localStorage.setItem('workouts', JSON.stringify(this.#workouts));
   }
@@ -326,6 +329,15 @@ class App {
 
     sidebar.classList.toggle('show__sidebar');
     menuBtn.classList.toggle('change__icon-color');
+  }
+
+  _zoomOutMobile() {
+    let viewport = document.querySelector('meta[name="viewport"]');
+
+    if (viewport) {
+      viewport.content = 'initial-scale=0.1';
+      // viewport.content = 'width=1200';
+    }
   }
 }
 
