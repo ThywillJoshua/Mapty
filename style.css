@@ -233,7 +233,7 @@ a:visited {
 
 .burger__icon {
   position: absolute;
-  top: 6.6rem;
+  top: 4.5rem;
   right: 5rem;
   z-index: 500;
   cursor: pointer;
@@ -278,14 +278,13 @@ a:visited {
 @media only screen and (max-width: 1024px) {
   body {
     flex-direction: column;
+    padding: 0;
+    overflow: hidden;
   }
 
   .sidebar {
-    flex-basis: 50rem;
-    background-color: var(--color-dark--1);
-    padding: 3rem 5rem 4rem 5rem;
+    padding: 3rem 2.3rem;
     display: none;
-    flex-direction: column;
 
     height: 40vh;
   }
@@ -296,9 +295,14 @@ a:visited {
 
   .burger__icon {
     visibility: visible;
+    right: 2.5rem;
   }
 
   .change__icon-color {
     color: var(--color-light--1);
+  }
+
+  .form__input {
+    margin-left: 0.5rem;
   }
 }
