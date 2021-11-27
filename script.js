@@ -213,6 +213,8 @@ class App {
       workout = new Cycling([lat, lng], distance, duration, elevation);
     }
 
+    instruction.classList.remove('hide');
+
     this.#workouts.push(workout);
 
     this._renderWorkoutMarker(workout);
