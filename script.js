@@ -161,7 +161,7 @@ class App {
   _newWorkout(e) {
     e.preventDefault();
 
-    this._zoomOutMobile();
+    // this._zoomOutMobile();
 
     const validInputs = (...inputs) =>
       inputs.every(inp => Number.isFinite(inp));
@@ -331,12 +331,7 @@ class App {
     menuBtn.classList.toggle('change__icon-color');
   }
 
-  _zoomOutMobile() {
-    let scale = 'scale(1)';
-    document.body.style.webkitTransform = scale; // Chrome, Opera, Safari
-    document.body.style.msTransform = scale; // IE 9
-    document.body.style.transform = scale; // General
-  }
+  // _zoomOutMobile() {}
 }
 
 const app = new App();

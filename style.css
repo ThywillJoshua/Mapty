@@ -287,6 +287,7 @@ a:visited {
     flex-direction: column;
     padding: 0;
     overflow: hidden;
+    font-size: 16px;
   }
 
   .sidebar {
@@ -311,5 +312,9 @@ a:visited {
 
   .form__input {
     margin-left: 0.5rem;
+  }
+
+  input[type='text'] {
+    font-size: inherit;
   }
 }
