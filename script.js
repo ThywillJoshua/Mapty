@@ -127,15 +127,15 @@ class App {
 
   _showForm(mapE) {
     if (
-      !sidebar.classList.contains('change__icon-color') &&
+      !sidebar.classList.contains('show__sidebar') &&
       !menuBtn.classList.contains('change__icon-color')
     ) {
-      menuBtn.classList.add('change__icon-color');
       sidebar.classList.add('show__sidebar');
+      menuBtn.classList.add('change__icon-color');
     }
 
-    form.classList.remove('hide');
-    submitBtn.classList.remove('hidden');
+    form.classList.remove('hidden');
+    submitBtn.classList.remove('hide');
     inputDistance.focus();
 
     this.#mapEvent = mapE;
