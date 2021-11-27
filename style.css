@@ -237,7 +237,7 @@ a:visited {
 
 .burger__icon {
   position: absolute;
-  top: 4.5rem;
+  top: 4.8rem;
   right: 5rem;
   z-index: 500;
   cursor: pointer;
@@ -291,7 +291,7 @@ a:visited {
   }
 
   .sidebar {
-    padding: 3rem 2.3rem;
+    padding: 3rem 1.3rem;
     display: none;
 
     height: 30%;
@@ -304,6 +304,10 @@ a:visited {
   .burger__icon {
     visibility: visible;
     right: 2.5rem;
+  }
+
+  .workout {
+    padding: 1.5rem 1rem;
   }
 
   .change__icon-color {

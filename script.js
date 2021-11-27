@@ -123,6 +123,20 @@ class App {
     this.#workouts.forEach(workout => {
       this._renderWorkoutMarker(workout);
     });
+
+    //Current Position
+    const popUpOptions = {
+      maxWidth: 150,
+      minWidth: 100,
+      autoClose: false,
+      closeOnClick: true,
+    };
+
+    L.marker(coords)
+      .addTo(this.#map)
+      .bindPopup(L.popup(popUpOptions))
+      .setPopupContent(`You're here!`)
+      .openPopup();
   }
 
   _showForm(mapE) {
@@ -160,8 +174,6 @@ class App {
 
   _newWorkout(e) {
     e.preventDefault();
-
-    // this._zoomOutMobile();
 
     const validInputs = (...inputs) =>
       inputs.every(inp => Number.isFinite(inp));
@@ -330,8 +342,6 @@ class App {
     sidebar.classList.toggle('show__sidebar');
     menuBtn.classList.toggle('change__icon-color');
   }
-
-  // _zoomOutMobile() {}
 }
 
 const app = new App();
